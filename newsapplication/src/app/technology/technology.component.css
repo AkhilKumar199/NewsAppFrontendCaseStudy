@@ -1,0 +1,30 @@
+.tableborder{
+
+  border-collapse: collapse;
+  width: 80%;
+  height: 90%;
+  border-spacing:0 15px;
+  
+}
+th, td {
+  border-collapse: collapse;
+  width:150px;
+  text-align:center;
+  border:1px;
+  padding:5px
+}
+.tablebody{
+  text-align: left;
+}
+
+
+
+
+
+
+
+.techimg{
+  nav-left: 50%;
+  
+}
+

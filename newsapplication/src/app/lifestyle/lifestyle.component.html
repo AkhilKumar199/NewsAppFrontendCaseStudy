@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+  
+    </head>
+    <body>
+    <div class="container">
+        <div class="info">
+          <h1>LifeStyle News </h1>
+        </div>
+        <!-- Normal Demo-->
+        <div class="column">
+          <div class="demo-title"></div>
+          <!-- Post-->
+          <div class="post-module">
+            <!-- Thumbnail-->
+            <div class="thumbnail">
+              <img src="assets/img/egghealth.jpg"/>
+            </div>
+            <!-- Post Content-->
+            <div class="post-content">
+              <div class="category">Photos</div>
+              <h1 class="title">Study: Heart-healthy metabolites in blood can be increased by eating eggs moderately</h1>
+              <h2 class="sub_title">HEALTH</h2>
+              <!--<a href="#belowsection">Read More</a>-->
+              <!--<div class="post-meta"><span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>-->
+            </div>
+          </div>
+        </div>
+        <!-- Hover Demo-->
+        <div class="column">
+          <div class="demo-title"></div>
+          <!-- Post-->
+          <div class="post-module hover">
+            <!-- Thumbnail-->
+            <div class="thumbnail">
+              <img src="assets/img/haircare.jpg"/>
+            </div>
+            <!-- Post Content-->
+            <div class="post-content">
+              <div class="category">Photos</div>
+              <h1 class="title">Hair care tips: Here's how to manage your tresses in the scorching summer heat</h1>
+              <h2 class="sub_title">FASHION</h2>
+              <p class="description">Just as the sun in summer damages your skin, it can damage your hair, too as the hot weather and sun’s UV rays can damage the outermost layer of your hair - the cuticle.</p>
+              <!--<div class="post-meta"><span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span><span class="comments"><i class="fa fa-comments"></i><a href="#"> 69 comments</a></span></div>-->
+            </div>
+          </div>
+        </div>
+        <div class="column">
+            <div class="demo-title"></div>
+            <!-- Post-->
+            <div class="post-module hover">
+              <!-- Thumbnail-->
+              <div class="thumbnail">
+                <img src="assets/img/coffee.jpg"/>
+              </div>
+              <!-- Post Content-->
+              <div class="post-content">
+                <div class="category">Photos</div>
+                <h1 class="title">Kickstarting the day with coffee, this time with a twist</h1>
+                <h2 class="sub_title">RECIPE</h2>
+                <p class="description">Steam and froth the milk. Take a shot of espresso in a cup, add chocolate sauce, and ground spices to your espresso. Pour the hot milk and just like latte. Enjoy.</p>
+                <div class="post-meta"><!--<span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span>--><span class="comments"><i class="fa fa-comments"></i><a href="#"> 25 comments</a></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="demo-title"></div>
+            <!-- Post-->
+            <div class="post-module hover">
+              <!-- Thumbnail-->
+              <div class="thumbnail">
+
+                <img src="assets/img/travel.jpg"/>
+              </div>
+              <!-- Post Content-->
+              <div class="post-content">
+                <div class="category">Photos</div>
+                <h1 class="title">Britain’s airports, airlines and ports see surge of jubilee holidaymakers</h1>
+                <h2 class="sub_title">TRAVEL</h2>
+                <p class="description">Britain’s airports, airlines and ports face their most frenetic weekend for years as a surge of vacation-bound passengers</p>
+                <div class="post-meta"><!--<span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span>--><span class="comments"><i class="fa fa-comments"></i><a href="#"> 39 comments</a></span></div>
+              </div>
+            </div>
+          </div>
+        
+      
+
+    </div>
+    <div class="container">
+      <h2 id="belowsection">For More Info</h2>
+      <table align="center" class="tableborders">
+  
+          <thead>
+      
+              <tr>
+      
+                 <!-- <th>Id</th>-->
+      
+                 <!-- <th>Category</th>
+      
+                  <th>Name</th>-->
+                  
+      
+              </tr>
+      
+          </thead>
+          <tbody>
+  
+              <tr *ngFor="let lifestyle of lifestyles">
+      
+              <!--<td> {{lifestyle.id}}</td>-->
+      
+              <td class="tablebody"><b> {{lifestyle.category}}</b><br>
+
+               {{lifestyle.name}}<br><br>
+
+              
+      
+              </tr>
+      
+          </tbody>
+      </table>
+  
+</div>
+    
+</body>
+</html>

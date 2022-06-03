@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgb(12,238,223);
+    background: linear-gradient(146deg, rgba(12,238,223,1) 30%, rgba(0,212,255,1) 68%, rgba(2,0,36,1) 95%);
+    height: 10vh;
+    text-align: center;
+    padding: 20px 16px;
+ }
+ footer p{
+  color : white;
+}

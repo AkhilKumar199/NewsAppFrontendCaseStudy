@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+  
+    </head>
+    <body>
+        
+    <div class="container">
+        <div class="info">
+          <h1>Article News</h1>
+        </div>
+        <!-- Normal Demo-->
+        <div class="column">
+          <div class="demo-title"></div>
+          <!-- Post-->
+          <div class="post-module">
+            <!-- Thumbnail-->
+            <div class="thumbnail">
+              <img src="assets/img/pollution.jpg"/>
+            </div>
+            <!-- Post Content-->
+            <div class="post-content">
+              <div class="category">Photos</div>
+              <h1 class="title">India’s Deadly Air Pollution Keeps Getting Worse Not Better</h1>
+              <h2 class="sub_title">Green</h2>
+              <p class="description">Program aimed at tackling smog is making little progress: CREA
+                Number of cities suffering poor air quality has increased</p>
+              <div class="post-meta"><!--<span class="timestamp"><i class="fa fa-clock-">o</i> 6 mins ago</span>--><span class="comments"><i class="fa fa-comments"></i><a href="#"> 52 comments</a></span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Hover Demo-->
+        <div class="column">
+          <div class="demo-title"></div>
+          <!-- Post-->
+          <div class="post-module hover">
+            <!-- Thumbnail-->
+            <div class="thumbnail">
+
+              <img src="assets/img/article.jpg"/>
+            </div>
+            <!-- Post Content-->
+            <div class="post-content">
+              <div class="category">Photos</div>
+              <h1 class="title">US expels another Chinese phone carrier on security grounds</h1>
+              <h2 class="sub_title">The Federal Communications Commission revoked authorization for Pacific Networks Corp.</h2>
+              <p class="description"></p>
+              <div class="post-meta"><!--<span class="timestamp"><i class="fa fa-clock-o"></i> 6 mins ago</span>--><span class="comments"><i class="fa fa-comments"></i><a href="#"> 66 comments</a></span></div>
+            </div>
+          </div>
+        </div>
+      
+        
+      
+
+    </div>
+    <div class="container">
+      <h2></h2>
+      <table align="center" class="tableborder">
+  
+          <thead>
+      
+              <tr>
+      
+                 <!-- <th>Id</th>-->
+      
+                 <!-- <th>Category</th>
+      
+                  <th>Description</th>-->
+                  
+      
+              </tr>
+      
+          </thead>
+          <tbody>
+  
+              <tr *ngFor="let article of articles">
+      
+              <!--<td> {{article.id}}</td>-->
+      
+              <td class="tablebody"><b> {{article.name}}</b><br>
+
+               {{article.author}}<br><br>
+               {{article.title}}<br><br>
+      
+               {{article.description}} </td>
+              
+      
+              </tr>
+      
+          </tbody>
+      </table>
+  
+</div>
+    
+</body>
+</html>

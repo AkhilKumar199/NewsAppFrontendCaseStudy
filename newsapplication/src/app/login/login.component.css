@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&family=Pacifico&family=Tapestry&family=Ubuntu&display=swap');
+
+body {
+  background: #f2f2f2;
+}
+
+.general {
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px 25px;
+  font-size: 1.8em;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%,-50%);
+  transition: all .3s;
+  display: inline-block;
+}
+
+.btn {
+  width: 180px;
+  height: 60px;
+  background-color: transparent;
+  border: 3px solid hotpink;
+  color: hotpink;
+}
+
+.btn:hover {
+  background: transparent;
+  border: none;
+}
+
+.btn:before,
+.btn:after{
+  content:'';
+  position:absolute;
+  top: 0px;
+  right:0;
+  height: 3px;
+  width: 0;
+  background: hotpink;
+  transition: 800ms ease all;
+}
+
+.btn:after{
+  right: inherit;
+  top: inherit;
+  left:0;
+  top: 55px;
+}
+
+.btn:hover:before,
+.btn:hover:after{
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+
+.register{
+
+    margin-left:70% ;
+    margin-top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+   .login{
+       text-align: center;
+       margin-right: 20px;
+       font-size: 40px;
+       margin-top: -20px;
+       font-family: Arial, Helvetica, sans-serif;
+       color: hotpink;
+
+   }
+  
+  .inputBox{
+  
+    display:block;
+  
+    margin:25px;
+  
+    padding:20px;
+  
+    width: 300px;
+  
+    border:3px solid rebeccapurple;
+    border-radius: 10px;
+    box-shadow: 80px;
+    font-size: 15px;
+   
+  
+  }
+  
+  
+  
+  .appButton{
+  
+    margin:25px;
+  
+    padding:10px ;
+  
+    width:100px;
+  
+    background-color: rebeccapurple;
+    color:azure;
+    border: 1px solid;
+  
+    cursor:pointer;
+    margin-left: 38%;
+  
+
+  }
+  .image1
+{
+    padding:0px;
+    left: 0;
+     margin-left:0px;
+     margin-right:0px;
+     margin-bottom: 10px;
+}
+
+.form-control{
+  display:block;
+  
+    margin:5px;
+  
+    padding:5px;
+  
+    width: 400px;
+}
+.login{
+  color: rebeccapurple;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%,-50%);
+  transition: all .3s;
+  display: inline-block;
+}
+.prompt{
+  margin-left: -70%;
+  color: red;
+}
+
+.link{
+  color: rebeccapurple;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%,-50%);
+  transition: all .3s;
+  display: inline-block;
+}
+
+  

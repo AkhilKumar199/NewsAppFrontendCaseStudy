@@ -1,0 +1,61 @@
+<br><br><br>
+<h3>Signup: Create your Account</h3>
+<div class="container-fluid">
+    <!--Name Input-->
+    <!-- (ngSubmit)="onSubmit()" -->
+    <form [formGroup]="registrationForm" (ngSubmit)="register()">
+      <div class="form-group">
+        <!--<label><b>User Name:</b></label>-->
+        <input
+          type="name"
+          class="form-control"
+          id="name"
+          placeholder="Enter User name"
+          name="username"
+          formControlName="username"
+          value="" 
+          required aria-required="true" 
+          minlength="3" 
+          maxlength="8"
+        />
+        <span *ngIf="username && username.invalid && username.touched">
+          User name should be minimum 3 character.
+        </span>
+        <!--<span>
+            <small *ngIf="username && username.invalid && username.touched" class="prompt">Enter the UserName.</small>
+        </span>-->
+      </div><br>
+      <div class="form-group">
+        <!--<label><b>Password:</b></label>-->
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          placeholder="Enter Your Password"
+          name="password"
+          formControlName="password"
+          
+        />
+        <span>
+            <small *ngIf="password && password.invalid && password.touched" class="prompt">Enter a valid password.</small>
+        </span>
+      </div><br>
+
+
+
+
+    <!-- Submit button -->
+
+    <button type="submit" [disabled]="registrationForm.invalid" routerLink="/signup" routerLinkActive="active" class="crazy">Sign up</button><br>
+    <br>
+    <a routerLink="/login" class="link" style="color: rebeccapurple; text-decoration: none;">Already have an account! Signin here.</a>
+
+
+
+
+  </form>
+ 
+    <!--{{registrationForm.value | json}}-->
+ 
+ 
+  </div>
