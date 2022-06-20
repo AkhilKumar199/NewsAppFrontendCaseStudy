@@ -30,6 +30,15 @@ fdescribe('ArticleComponent', () => {
     expect(articledata.length).toEqual(4);
 
   });
+  it("testing title",() => {
+
+
+
+    expect (component.componentName).toBe("Article")
+
+ 
+
+  })
   
   
 });

@@ -8,9 +8,21 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./home-component.component.css']
 })
 export class HomeComponentComponent implements OnInit {
-  constructor() { }
+  News:any;
+
+
+
+  constructor(private http:HttpClient) { }
+
+
 
   ngOnInit(): void {
-  }
 
+    let response=this.http.get("http://localhost:8082/api/v1/News");
+
+    response.subscribe((data)=>this.News=data)
+
+   
+
+  }
 }
